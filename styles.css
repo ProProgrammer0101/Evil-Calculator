@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: #0d0d0d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Making the calculator body */
+
+.calculator {
+    max-width: 500px;
+    width: 80%;
+    background-color: #2e2e2e;
+    border-radius: 20px;
+    padding: 20px 10px;
+    position: relative;
+    /* box-shadow: 0px 0px 6px 2px #fd2b2b, 0px 0px 6px 2px #e42424; */
+}
+
+/* Another Shadow */
+
+.calculator {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.8); /* Initial evil glow */
+}
+
+.calculator::before {
+    content: '';
+    position: absolute;
+    inset: -10px; /* Expand beyond the element */
+    border-radius: 20px;
+    background: radial-gradient(circle, rgba(255, 0, 0, 0.8) 10%, transparent 80%);
+    filter: blur(25px);
+    opacity: 0.8;
+    z-index: -1;
+    animation: evilShadow 3s infinite alternate ease-in-out;
+}
+
+@keyframes evilShadow {
+    0% {
+        filter: blur(25px);
+        opacity: 0.9;
+        transform: scale(1);
+    }
+    100% {
+        filter: blur(40px);
+        opacity: 0.4;
+        transform: scale(1.1);
+    }
+}
+
+
+.display > input {
+    padding: 10px 0;
+    width: 100%;
+    background-color: #504f4f;
+    border-right: 1px solid #720a0a;
+    border-bottom: 1px solid #720a0a;
+    color: #ffffff;
+    font-size: 4rem;
+    text-align: right;
+    border-radius: 20px;
+}
+
+.buttons {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 2px;
+}
+
+.btn {
+    padding: 20px;
+    font-size: 2rem;
+    background-color: #d60d0d; /*Tryna give this a vampire vibe!*/
+    color: #ffffff;
+    border: .5px solid #720a0a;
+    border-radius: 20px;
+    margin: 4px;
+    transition: all .3s;
+}
+
+.btn.operator {
+    background-color: #720a0a;
+    color: #ffffff;
+}
+
+.btn[value="="] {
+    grid-column: 4 / 5;
+    grid-row: 4 / 6;
+}
+
+.btn:hover:not(.operator) {
+    background-color: #ff2b2b;
+    color: #ffffff;
+}
+
+.btn.operator:hover {
+    background-color: #d11c1c;
+    color: #ffffff;
+}
+.btn:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.btn:active {
+    transform: scale(0.9);
+    cursor: grabbing;
+}
+
+
+
+/* Evil Sound Button's Styling */
+
+.sound-btn {
+    
+}
+
+.sound-btn button {
+    padding: 20px;
+}

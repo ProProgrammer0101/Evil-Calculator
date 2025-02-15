@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Glowing Border</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100vh;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #0d0d0d;
+        }
+        div {
+            width: 250px;
+            height: auto;
+            padding: 20px;
+            text-align: center;
+            background-color: #2e2e2e;
+            color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.2), 0 0 25px rgba(255, 0, 0, 0.2), 0 0 35px rgba(255, 0, 0, 0.2), 0 0 45px rgba(255, 0, 0, 0.2);
+            animation: vampireGlow 1.5s infinite alternate;
+        }
+
+        @keyframes vampireGlow {
+            0% {
+                box-shadow: 0 0 15px rgba(255, 0, 0, 0.2), 0 0 25px rgba(255, 0, 0, 0.2), 0 0 35px rgba(255, 0, 0, 0.2), 0 0 45px rgba(255, 0, 0, 0.2);
+            }
+            100% {
+                box-shadow: 0 0 20px rgba(255, 0, 0, 0.4), 0 0 30px rgba(255, 0, 0, 0.4), 0 0 40px rgba(255, 0, 0, 0.4), 0 0 50px rgba(255, 0, 0, 0.4);
+            }
+        }
+
+        h1 {
+            color: #ff0000;
+            font-weight: bold;
+        }
+
+        p {
+            color: #e0e0e0;
+            line-height: 1.6;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="card">
+        <h1>Random Texts!</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quod doloribus possimus iusto amet provident. Magni, officiis pariatur. Hic provident vero deserunt reiciendis eos, quaerat perspiciatis officiis dolor a beatae?</p>
+    </div>
+
+</body>
+</html>

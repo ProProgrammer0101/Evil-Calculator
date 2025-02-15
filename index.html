@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evil Calculator!</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/44f293731a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="sound-btn">
+        <button onclick="playEvilSound()">EVILNESS</button>
+    </div>
+
+    <div class="calculator vampire-theme">
+        <div class="display">
+            <input type="text" readonly value="9191" id="display">
+        </div>
+        <div class="buttons">
+            <button class="btn operator" onclick="clearDisplay()" value="C">C</button>
+            <button class="btn operator" onclick="clickToAppend('/')" value="/"><i class="fa-solid fa-divide"></i></button>
+            <button class="btn operator" onclick="clickToAppend('*')" value="*"><i class="fa-solid fa-multiply"></i></button>
+            <button class="btn operator" onclick="clickToCut('cut')" value="cut"><i class="fa fa-scissors" aria-hidden="true"></i></button>
+            <button class="btn numbers" onclick="clickToAppend('7')" value="7">7</button>
+            <button class="btn number" onclick="clickToAppend('8')" value="8">8</button>
+            <button class="btn number" onclick="clickToAppend('9')" value="9">9</button>
+            <button class="btn operator" onclick="clickToAppend('-')" value="minus"><i class="fa fa-minus" aria-hidden="true"></i></button>
+            <button class="btn number" onclick="clickToAppend('4')" value="4">4</button>
+            <button class="btn number" onclick="clickToAppend('5')" value="5">5</button>
+            <button class="btn number" onclick="clickToAppend('6')" value="6">6</button>
+            <button class="btn operator" onclick="clickToAppend('+')" value="plus"><i class="fa fa-plus" aria-hidden="true"></i></button>
+            <button class="btn number" onclick="clickToAppend('1')" value="1">1</button>
+            <button class="btn number" onclick="clickToAppend('2')" value="2">2</button>
+            <button class="btn number" onclick="clickToAppend('3')" value="3">3</button>
+            <button class="btn operator" onclick="calculate()" value="="><i class="fa-solid fa-equals"></i></button>
+            <button class="btn operator" onclick="clickToAppend('%')" value="%">%</button>
+            <button class="btn number" onclick="clickToAppend('0')" value="0">0</button>
+            <button class="btn operator" onclick="clickToAppend('.')" value=".">.</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
