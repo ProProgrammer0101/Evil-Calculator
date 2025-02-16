@@ -89,11 +89,16 @@ body {
 @media screen and (max-width: 600px) {
     .calculator {
         width: 90%;
-        height: ;
+        height: auto;
     }
 
     body {
         flex-direction: column-reverse;
+    }
+
+    .btn {
+        padding: 10px;
+        font-size: 1.5rem;
     }
 
     .sound-btn {
@@ -102,11 +107,13 @@ body {
 
     .blur {
         filter: vlur(25px);
-        width: 100%;
+        width: 100vw;
         height: 10vh;
         position: sticky;
         bottom: 0;
         left: 0;
+        z-index: 100;
+        color: white;
     }
 }
 
