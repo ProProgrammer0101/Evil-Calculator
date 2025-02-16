@@ -23,12 +23,13 @@ function clearDisplay() {
     display.value = '';
 }
 
-
-
 // Evil Sounds here
 
-const kiras_madness = new Audio("Sounds/kiras_madness.mp3");
+const kiras_madness = new Audio("kiras_madness.mp3");
+const soundButton = document.querySelector('.sound-btn a');
 
-function playEvilSound() {
-    kiras_madness.play()
-}
+soundButton.addEventListener('click', (event) => {
+    event.preventDefault();
+    kiras_madness.play();
+    soundButton.classList.add('disabled');
+});
