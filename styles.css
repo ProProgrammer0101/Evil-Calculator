@@ -6,7 +6,7 @@
 
 body {
     width: 100%;
-    height: auto;
+    height: max(100vh, auto);
     background: #0d0d0d;
     display: flex;
     justify-content: center;
@@ -40,7 +40,7 @@ body {
 }
 
 .animated-shadow {
-    animation: vampireGlow 2s;
+    animation: vampireGlow 2s 2;
 }
 
 @keyframes vampireGlow {
@@ -48,7 +48,7 @@ body {
         box-shadow: 0 0 15px rgba(255, 0, 0, 0.2), 0 0 25px rgba(255, 0, 0, 0.2), 0 0 35px rgba(255, 0, 0, 0.2), 0 0 45px rgba(255, 0, 0, 0.2);
     }
     50% {
-        box-shadow: 0 0 60px rgba(255, 0, 0, 0.4), 0 0 70px rgba(255, 0, 0, 0.4), 0 0 80px rgba(255, 0, 0, 0.4), 0 0 90px rgba(255, 0, 0, 0.4);
+        box-shadow: 0 0 60px 50px rgba(255, 0, 0, 0.4), 0 0 70px  50px rgba(255, 0, 0, 0.4), 0 0 80px  50px rgba(255, 0, 0, 0.4), 0 0 90px 50px rgba(255, 0, 0, 0.4);
     }
     100% {
         box-shadow: 0 0 15px rgba(255, 0, 0, 0.2), 0 0 25px rgba(255, 0, 0, 0.2), 0 0 35px rgba(255, 0, 0, 0.2), 0 0 45px rgba(255, 0, 0, 0.2);
