@@ -25,6 +25,7 @@ function clearDisplay() {
 
 // Evil Sounds here
 
+const calculatorBody = document.querySelector('.calculator');
 const kiras_madness = new Audio("kiras_madness.mp3");
 const soundButton = document.querySelector('.sound-btn a');
 
@@ -32,4 +33,5 @@ soundButton.addEventListener('click', (event) => {
     event.preventDefault();
     kiras_madness.play();
     soundButton.classList.add('disabled');
+    calculatorBody.classList.add('animated-shadow');
 });

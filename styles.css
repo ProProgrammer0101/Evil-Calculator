@@ -21,7 +21,7 @@ body {
     width: 80%;
     background-color: #2e2e2e;
     border-radius: 20px;
-    margin-top: 7vh;
+    margin-top: 3vh;
     padding: 20px 10px;
     position: relative;
     /* box-shadow: 0px 0px 6px 2px #fd2b2b, 0px 0px 6px 2px #e42424; */
@@ -37,7 +37,10 @@ body {
                 0 0 25px rgba(255, 0, 0, 0.2),
                 0 0 35px rgba(255, 0, 0, 0.2),
                 0 0 45px rgba(255, 0, 0, 0.2);
-    animation: vampireGlow 2.5s alternate;
+}
+
+.animated-shadow {
+    animation: vampireGlow 2s;
 }
 
 @keyframes vampireGlow {
@@ -45,7 +48,7 @@ body {
         box-shadow: 0 0 15px rgba(255, 0, 0, 0.2), 0 0 25px rgba(255, 0, 0, 0.2), 0 0 35px rgba(255, 0, 0, 0.2), 0 0 45px rgba(255, 0, 0, 0.2);
     }
     50% {
-        box-shadow: 0 0 30px rgba(255, 0, 0, 0.4), 0 0 40px rgba(255, 0, 0, 0.4), 0 0 50px rgba(255, 0, 0, 0.4), 0 0 60px rgba(255, 0, 0, 0.4);
+        box-shadow: 0 0 60px rgba(255, 0, 0, 0.4), 0 0 70px rgba(255, 0, 0, 0.4), 0 0 80px rgba(255, 0, 0, 0.4), 0 0 90px rgba(255, 0, 0, 0.4);
     }
     100% {
         box-shadow: 0 0 15px rgba(255, 0, 0, 0.2), 0 0 25px rgba(255, 0, 0, 0.2), 0 0 35px rgba(255, 0, 0, 0.2), 0 0 45px rgba(255, 0, 0, 0.2);
@@ -103,17 +106,6 @@ body {
 
     .sound-btn {
         margin-top: 20px;
-    }
-
-    .blur {
-        filter: vlur(25px);
-        width: 100vw;
-        height: 10vh;
-        position: sticky;
-        bottom: 0;
-        left: 0;
-        z-index: 100;
-        color: white;
     }
 }
 
