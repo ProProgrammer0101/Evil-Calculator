@@ -39,11 +39,13 @@ body {
                 0 0 45px rgba(255, 0, 0, 0.2);
 }
 
-.animated-shadow {
-    animation: vampireGlow 2s 2;
+.animated-evilness {
+    position: relative;
+    animation: animated-evilness-shadow 4s 2, animated-evilness-body 4s 1;
+    transition: all 0.5s;
 }
 
-@keyframes vampireGlow {
+@keyframes animated-evilness-shadow {
     0% {
         box-shadow: 0 0 15px rgba(255, 0, 0, 0.2), 0 0 25px rgba(255, 0, 0, 0.2), 0 0 35px rgba(255, 0, 0, 0.2), 0 0 45px rgba(255, 0, 0, 0.2);
     }
@@ -52,6 +54,21 @@ body {
     }
     100% {
         box-shadow: 0 0 15px rgba(255, 0, 0, 0.2), 0 0 25px rgba(255, 0, 0, 0.2), 0 0 35px rgba(255, 0, 0, 0.2), 0 0 45px rgba(255, 0, 0, 0.2);
+    }
+}
+
+@keyframes animated-evilness-body {
+    0% {
+        transform: rotate(0deg) skew(0deg);
+    }
+    25% {
+        transform: rotate(10deg) skew(10deg);
+    }
+    75% {
+        transform: rotate(-10deg) skew(-100deg);
+    }
+    100% {
+        transform: rotate(0deg) skew(0deg);
     }
 }
 
@@ -178,7 +195,7 @@ body {
     position: relative;
 }
 
-.sound-btn > .child-sound-btn {
+/* .sound-btn > .child-sound-btn {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -189,7 +206,32 @@ body {
     font: inherit;
     cursor: pointer;
     visibility: visible;
+} */
+
+
+
+/* Making the EVIL button's WARNING */
+
+.warning {
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    transform: translate(100%, 100%);
+    background: #000000;
+    color: rgb(255, 0, 0);
+    padding: 10px;
+    border-radius: 10px;
 }
+
+/* .sound-btn::before {
+    content: "DO NOT PRESS THIS BUTTON!";
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    color: white;
+    bottom: 110%;
+    left: 50%;
+} */
 
 .disabled {
     
