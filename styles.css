@@ -72,6 +72,101 @@ body {
     }
 }
 
+/*
+=============================================================
+              Animation for the buttons
+=============================================================
+*/
+
+@keyframes throwingButtonsE1 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-1000px) translateX(-1000px);
+    }
+    100% {
+        transform: translateY(1000px);
+    }
+}
+@keyframes throwingButtonsE2 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-1000px) translateX(-1000px);
+    }
+    100% {
+        transform: translateY(2000px);
+    }
+}
+@keyframes throwingButtonsE3 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2141px) translateX(-1320px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes throwingButtonsE4 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-1000px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes throwingButtonsE5 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-1000px) translateX(-1000px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes throwingButtonsE6 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-1000px) translateX(-1000px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes throwingButtonsE7 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-1000px) translateX(-1000px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes throwingButtonsE8 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 @keyframes subtleEvilShadow {
     0% {
         filter: blur(25px);
@@ -194,44 +289,6 @@ body {
     margin-left: 30px;
     position: relative;
 }
-
-/* .sound-btn > .child-sound-btn {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: transparent;
-    border: none;
-    color: white;
-    font: inherit;
-    cursor: pointer;
-    visibility: visible;
-} */
-
-
-
-/* Making the EVIL button's WARNING */
-
-.warning {
-    position: absolute;
-    top: -100%;
-    left: -100%;
-    transform: translate(100%, 100%);
-    background: #000000;
-    color: rgb(255, 0, 0);
-    padding: 10px;
-    border-radius: 10px;
-}
-
-/* .sound-btn::before {
-    content: "DO NOT PRESS THIS BUTTON!";
-    width: 100%;
-    height: 100%;
-    background-color: #000000;
-    color: white;
-    bottom: 110%;
-    left: 50%;
-} */
 
 .disabled {
     

@@ -29,9 +29,13 @@ const calculatorBody = document.querySelector('.calculator');
 const kiras_madness = new Audio("kiras_madness.mp3");
 const soundButton = document.querySelector('.sound-btn a');
 
+let showAlert = true;
 soundButton.addEventListener('click', (event) => {
     // event.preventDefault();
-    alert('You are going to make a great mistake! 😈');
+    if (showAlert) {
+        alert('You are going to make a great mistake! 😈');
+        showAlert = false;
+    }
     kiras_madness.play();
     soundButton.classList.add('disabled');
     calculatorBody.classList.toggle('animated-evilness');
@@ -47,4 +51,29 @@ function mainEvilness() {
     const e6 = document.querySelectorAll('.e6');
     const e7 = document.querySelectorAll('.e7');
     const e8 = document.querySelectorAll('.e8');
+
+    e1.forEach(e => {
+        e.style.animation = 'throwingButtonsE1 1s forwards';
+    });
+    e2.forEach(e => {
+        e.style.animation = 'throwingButtonsE2 1s forwards';
+    });
+    e3.forEach(e => {
+        e.style.animation = 'throwingButtonsE3 1s forwards';
+    });
+    e4.forEach(e => {
+        e.style.animation = 'throwingButtonsE4 1s forwards';
+    });
+    e5.forEach(e => {
+        e.style.animation = 'throwingButtonsE5 1s forwards';
+    });
+    e6.forEach(e => {
+        e.style.animation = 'throwingButtonsE6 1s forwards';
+    });
+    e7.forEach(e => {
+        e.style.animation = 'throwingButtonsE7 1s forwards';
+    });
+    e8.forEach(e => {
+        e.style.animation = 'throwingButtonsE8 1s forwards';
+    });
 }
