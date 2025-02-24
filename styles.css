@@ -225,7 +225,7 @@ body {
         transform: translateY(-1000px) translateX(-1000px);
     }
     100% {
-        transform: translateY(0);
+        transform: translateY(0) translateX(0);
     }
 }
 @keyframes normalizingButtonsE6 {
@@ -236,7 +236,7 @@ body {
         transform: translateY(-1000px) translateX(-1000px);
     }
     100% {
-        transform: translateY(-1000px);
+        transform: translateY(0) translateX(0);
     }
 }
 @keyframes normalizingButtonsE7 {
@@ -260,6 +260,7 @@ body {
     100% {
         transform: translateY(0);
     }
+}
 /* 
 @keyframes subtleEvilShadow {
     0% {
@@ -385,6 +386,32 @@ body {
 
 .controller-buttons {
     display: flex;
-    justify-content: space-between;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
     margin-left: 40px;
+}
+
+/* Styling the normalize button */
+.controller-buttons .normalizeBtn {
+    width: 275px;
+    margin-top: 10px;
+    padding: 15px 0;
+    font-size: 1.8rem;
+    font-family: 'Playfair Display', serif;
+    background-color: #440000;
+    color: rgb(255, 255, 255);
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    visibility: hidden;
+    transition: all .3s;
+}
+
+.controller-buttons .normalizeBtn:hover {
+    font-size: 2rem;
+}
+
+.controller-buttons .normalizeBtn:active {
+    font-size: 1.7rem;
 }
