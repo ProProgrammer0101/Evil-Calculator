@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        let p = document.createElement('p');
+        p.innerText = 'Hello World!';
+        document.body.appendChild(p);
+
+        let button = document.createElement('button');
+        button.innerText = 'Click Me!';
+        button.setAttribute('onclick', 'changeContent()');
+        document.body.appendChild(button);
+
+        function changeContent() {
+            p.innerText = 'Hello Universe!';
+        };
+    </script>
+</body>
+</html>

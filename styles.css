@@ -65,7 +65,7 @@ body {
         transform: rotate(10deg) skew(10deg);
     }
     75% {
-        transform: rotate(-10deg) skew(-100deg);
+        transform: rotate(-50deg) skew(-50deg);
     }
     100% {
         transform: rotate(0deg) skew(0deg);
@@ -167,6 +167,100 @@ body {
     }
 }
 
+/* 
+=======================================
+       Normalizing the buttons
+=======================================
+*/
+
+@keyframes normalizingButtonsE1 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-1000px) translateX(-1000px);
+    }
+    100% {
+        transform: translateY(1000px);
+    }
+}
+@keyframes normalizingButtonsE2 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-1000px) translateX(-1000px);
+    }
+    100% {
+        transform: translateY(2000px);
+    }
+}
+@keyframes normalizingButtonsE3 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2141px) translateX(-1320px);
+    }
+    100% {
+        transform: translateY(1000);
+    }
+}
+@keyframes normalizingButtonsE4 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-1000px);
+    }
+    100% {
+        transform: translateY(2000px);
+    }
+}
+@keyframes normalizingButtonsE5 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-1000px) translateX(-1000px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes normalizingButtonsE6 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-1000px) translateX(-1000px);
+    }
+    100% {
+        transform: translateY(-1000px);
+    }
+}
+@keyframes normalizingButtonsE7 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-1000px) translateX(-1000px);
+    }
+    100% {
+        transform: translateY(0) translateX(0);
+    }
+}
+@keyframes normalizingButtonsE8 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-1000px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+/* 
 @keyframes subtleEvilShadow {
     0% {
         filter: blur(25px);
@@ -192,7 +286,7 @@ body {
         transform: scale(5);
     }
 }
-
+ */
 
 /* 
 ===============================================
@@ -216,7 +310,7 @@ body {
         font-size: 1.5rem;
     }
 
-    .sound-btn {
+    .controller-buttons {
         margin-top: 20px;
     }
 }
@@ -283,5 +377,14 @@ body {
 
 
 
-/* Evil Sound Button's Styling */
+/* 
+=======================================
+           Controller Buttons
+=======================================
+*/
 
+.controller-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+}
